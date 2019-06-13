@@ -1,0 +1,14 @@
+
+<%@employees.each do |employee| %>
+<div>
+<h1> Name: <%= link_to employee.to_s, employee %></h1>
+</div>
+<div><%= employee.alias %></div>
+<div><%= employee.title %></div>
+
+<div><%= employee.office %></div>
+<div><img src="<%= employee.img_url %>"></img></div>
+<% end  %>
+<% %>
+<% %>
+<% %>
