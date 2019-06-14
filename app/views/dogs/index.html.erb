@@ -1,0 +1,23 @@
+<h1>Dogs</h1>
+
+
+<% @dogs.each do |dog| %>
+<%= link_to dog.name, dog %><br>
+Breed: <%= dog.breed %><br>
+Age: <%= dog.age %><br>
+Number of Employees: <%= dog.employees.count %><br>
+<br><% end %>
+
+
+<%# The Dog show page should have their name,
+breed, age and
+the list of Dunder Mifflin Employees they are connected to %>
+
+
+
+
+Sort by employee count:
+<%= form_tag('/dogs/sort') do %>
+<%= select_tag 'sorter', raw('<option>minimum</option><option>maximum</option>') %>
+<%= submit_tag 'Sort' %>
+<% end %>

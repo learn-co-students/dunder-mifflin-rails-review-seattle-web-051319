@@ -1,0 +1,15 @@
+
+Dog:
+<%= @dogs.name %><br>
+<%= @dogs.breed %><br>
+<%= @dogs.age %><br>
+
+Employees:
+<ul><% @employees.each do |employee| %>
+<li><%= employee.to_s %></li>
+</ul>
+<% end %>
+
+<%# The Dog show page should have their name,
+breed, age and
+the list of Dunder Mifflin Employees they are connected to %>
