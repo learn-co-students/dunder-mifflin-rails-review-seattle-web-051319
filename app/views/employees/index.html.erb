@@ -1,0 +1,9 @@
+<h1>Employees!</h1>
+
+<% @employees.each do |employee| %>
+  <h3><%= link_to employee.to_s, employee %></h3>
+  Alias: <%= employee.alias %><br>
+  Title: <%= employee.title %><br>
+  Office <%= employee.office %><br>
+  <img src="<%= employee.img_url %>"></img><br>
+<% end %>
